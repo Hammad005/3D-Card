@@ -39,7 +39,7 @@ function CarShow() {
 
       <Rings />
       <Boxes />
-      <FloatingGrid />
+      {/* <FloatingGrid /> */}
 
       <spotLight
         color={[1, 0.25, 0.7]}
