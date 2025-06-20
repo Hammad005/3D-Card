@@ -2,11 +2,12 @@ import { useFrame, useLoader } from '@react-three/fiber';
 import { useEffect } from 'react'
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import carModel from "../public/models/car/scene.gltf"
 
 const Car = () => {
     const gltf = useLoader(
     GLTFLoader,
-    "models/car/scene.gltf"
+    carModel
   );
   
   useEffect(() => {

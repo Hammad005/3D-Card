@@ -3,11 +3,13 @@ import { useFrame, useLoader } from "@react-three/fiber";
 import { useEffect } from "react";
 import { RepeatWrapping } from "three";
 import * as THREE from 'three';
+import roughTexture from "../public/textures/terrain-roughness.jpg";
+import normalTexture from '../public/textures/terrain-normal.jpg';
 
 const Ground = () => {
   const [roughness, normal] = useLoader(THREE.TextureLoader, [
-      "textures/terrain-roughness.jpg",
-      "textures/terrain-normal.jpg",
+    roughTexture,
+    normalTexture
   ]);
 
 
